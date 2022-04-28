@@ -1,0 +1,4287 @@
+[
+  {
+    "srcTableName": "bd_tmp.tmp_events_history_di_2",
+    "targetTableName": "history_custom_events",
+    "receiveTimeSrcTabColName": "receive_time",
+    "ruleList":[
+        {
+            "targetFieldName": "id",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "id"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "_receive_time",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "receive_time"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "_app_id",
+            "ruleInfo": {
+                "handler": {
+                    "type": "appIdRule",
+                    "params": [
+                        "_app_id",
+                        "026002c74af04426a2b8e6fe77d346af"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "_app_version",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "_app_version"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "_bot_name",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "_bot_name"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "_browser",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "_browser"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "_browser_version",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "_browser_version"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "_carrier",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "_carrier"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "_city",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "_city"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "_country",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "_country"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "_device_id",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "_device_id"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "_device_type",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "_device_type"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "_element_class_name",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "_element_class_name"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "_element_content",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "_element_content"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "_element_id",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "_element_id"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "_element_name",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "_element_name"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "_element_path",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "_element_path"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "_element_position",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "_element_position"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "_element_selector",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "_element_selector"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "_element_target_url",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "_element_target_url"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "_element_type",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "_element_type"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "_env",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "_env"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "_event_duration",
+            "ruleInfo": {
+                "handler": {
+                    "type": "cast",
+                    "params": [
+                        "_event_duration",
+                        "bigint"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "_event_duration_from_in",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "event_duration_from_in"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "_exposure_times",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "_exposure_times"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "_ip",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "_ip"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "_ip_isp",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "_ip_isp"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "_is_first_day",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "_is_first_day"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "_is_first_time",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "_is_first_time"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "_latest_referrer",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "_latest_referrer"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "_latest_scene",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "_latest_scene"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "_latest_search_keyword",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "_latest_search_keyword"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "_latest_traffic_source_type",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "_latest_traffic_source_type"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "_latest_utm_campaign",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "_latest_utm_campaign"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "_latest_utm_content",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "_latest_utm_content"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "_latest_utm_medium",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "_latest_utm_medium"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "_latest_utm_source",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "_latest_utm_source"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "_latest_utm_term",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "_latest_utm_term"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "_lib",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "_lib_type"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "_lib_detail",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "_lib_detail"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "_lib_method",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "_lib_method"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "_lib_version",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "_lib_version"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "_manufacturer",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "_manufacturer"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "_model",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "_model"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "_mp_app_id",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "_mp_app_id"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "_network_type",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "_network_type"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "_os",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "_os"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "_os_version",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "_os_version"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "_province",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "_prov_name"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "_referrer",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "_referrer"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "_referrer_host",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "_referrer_host"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "_referrer_title",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "_referrer_title"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "_resume_from_background",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "_resume_from_background"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "_scene",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "_scene"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "_screen_height",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "_screen_height"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "_screen_name",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "_screen_name"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "_screen_width",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "_screen_width"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "_share_depth",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "_share_depth"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "_share_unique_id",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "_share_distinct_id"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "_share_method",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "_share_method"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "_share_url_path",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "_share_url_path"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "_stay_type",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "_stay_type"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "_title",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "_title"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "_unimem_id",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "_unimem_id"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "_url",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "_url"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "_url_host",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "_url_host"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "_url_path",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "_url_path"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "_url_query",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "_url_query"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "_user_agent",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "_user_agent"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "_utm_source",
+            "ruleInfo": {
+                "handler": {
+                    "type": "utmSourceRule",
+                    "params": [
+                        "_utm_source",
+                        "type",
+                        "profile_set_once"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "_viewport_height",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "_viewport_height"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "_viewport_position",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "_viewport_position"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "_viewport_width",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "_viewport_width"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "_wifi",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "_wifi"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "_unique_id",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "distinct_id"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "_event",
+            "ruleInfo": {
+                "handler": {
+                    "type": "dollar",
+                    "params": [
+                        "event"
+                    ]
+                },
+                "filter": {
+                    "type": "zero",
+                    "params": [
+                        "event"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "_event_time",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "event_time"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "_receive_date",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "receive_date"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "_imei",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "imei"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "_user_id",
+            "ruleInfo": {
+                "handler": {
+                    "type": "loginIdRule",
+                    "params": [
+                        "login_id"
+                    ]
+                },
+                "filter": {
+                    "type": "loginIdFilter",
+                    "params": [
+                        "login_id"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "_oaid",
+            "ruleInfo": {
+                "handler": {
+                    "type": "odIdRule",
+                    "params": [
+                        "oaid",
+                        "00000000-0000-0000-0000-000000000000"
+                    ]
+                },
+                "filter": {
+                    "type": "oaIdFilter",
+                    "params": [
+                        "oaid"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "_pkg",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "pkg"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "_real_ip",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "real_ip"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "_referrer_page_alias",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "referrer_page_alias"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "_referrer_path",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "referrer_path"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "_page_visit_id",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "_page_visit_id"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "_latest_referrer_host",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "_latest_referrer_host"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "uuid",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "uuid"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "type",
+            "ruleInfo": {
+                "handler": {
+                    "type": "typeRule",
+                    "params": [
+                        "type",
+                        "track",
+                        "profile_set_once",
+                        "set_once_profile"
+                    ]
+                },
+                "filter": {
+                    "type": "zero",
+                    "params": [
+                        "type"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "site",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "site"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "union_id",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "unionid"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "nickname",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "nickname"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "open_id",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "openid"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "_latest_share_unique_id",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "_latest_share_unique_id"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "platform_type",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "platform_type"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "_hybrid_h5",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "_hybrid_h5"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "page_alias",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "page_alias"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "_receive_day",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "_receive_day"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "_timezone_offset",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "_timezone_offset"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "_first_visit_time",
+            "ruleInfo": {
+                "handler": {
+                    "type": "firstFieldRule",
+                    "params": [
+                        "type",
+                        "profile_set_once",
+                        "receive_time"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "depth",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "depth"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "depth_direction",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "depth_direction"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "_longitude",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "_longitude"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "_latitude",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "_latitude"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "original_id",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "original_id"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "_utm_term",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "_utm_term"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "_utm_medium",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "_utm_medium"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "_utm_content",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "_utm_content"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "_utm_campaign",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "_utm_campaign"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "session_id",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "session_id"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "_screen_orientation",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "_screen_orientation"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "_latest_share_method",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "_latest_share_method"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "_latest_share_url_path",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "_latest_share_url_path"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "_latest_share_depth",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "_latest_share_depth"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "_first_traffic_source_type",
+            "ruleInfo": {
+                "handler": {
+                    "type": "firstFieldRule",
+                    "params": [
+                        "type",
+                        "profile_set_once",
+                        "_latest_traffic_source_type"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "_first_search_keyword",
+            "ruleInfo": {
+                "handler": {
+                    "type": "firstFieldRule",
+                    "params": [
+                        "type",
+                        "profile_set_once",
+                        "_latest_search_keyword"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "_first_referrer_host",
+            "ruleInfo": {
+                "handler": {
+                    "type": "firstFieldRule",
+                    "params": [
+                        "type",
+                        "profile_set_once",
+                        "_latest_referrer_host"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "_first_referrer",
+            "ruleInfo": {
+                "handler": {
+                    "type": "firstFieldRule",
+                    "params": [
+                        "type",
+                        "profile_set_once",
+                        "_latest_referrer"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "_first_browser_language",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "_first_browser_language"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "_first_browser_charset",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "_first_browser_charset"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "_time",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "_time"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "_flush_time",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "_flush_time"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "search_event_name",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "search_event_name"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "search_business_name",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "search_business_name"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "search_app_id",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "search_app_id"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "search_page_alias",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "search_page_alias"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "property_name",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "property_name"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "property_code",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "property_code"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "search_terminal",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "search_terminal"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "_sf_channel_category",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "_sf_channel_category"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "_sf_channel_id",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "_sf_channel_id"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "_sf_channel_service_name",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "_sf_channel_service_name"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "_sf_msg_link",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "_sf_msg_link"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "_sf_msg_id",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "_sf_msg_id"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "_sf_msg_title",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "_sf_msg_title"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "_sf_msg_content",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "_sf_msg_content"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "_app_name",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "app_name"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "app_crashed_reason",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "app_crashed_reason"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "is_success",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "is_success"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "_track_id",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "_track_id"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "anonymous_id",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "anonymous_id"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "click_alias",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "click_alias"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "click_content",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "click_content"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "fail_msg",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "fail_msg"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "search_alias",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "search_alias"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "search_content",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "search_content"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "operating_alias",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "operating_alias"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "currenttime",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "currenttime"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "isended",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "isended"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "modulename",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "modulename"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "stepname",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "stepname"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "tenantcodeencrypt",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "tenantcodeencrypt"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "domain",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "domain"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "adivserid",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "adivserid"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "proposaltype",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "proposaltype"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "proposaleventname",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "proposaleventname"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "productid",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "productid"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "proposalproductname",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "proposalproductname"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "articlename",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "articlename"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "tag_customer_id",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "tag_customer_id"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "click_tab_name",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "click_tab_name"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "from_tab_name",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "from_tab_name"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "from_sys_name",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "from_sys_name"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "view_tab_name",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "view_tab_name"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "view_tab_duration",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "view_tab_duration"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "page_title",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "page_title"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "page_url",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "page_url"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "click_key",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "click_key"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "page_postion",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "page_postion"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "role_name",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "role_name"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "employee_work_code",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "employee_work_code"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "search_keys",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "search_keys"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "bi_relate_name",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "bi_relate_name"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "bi_relate_type",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "bi_relate_type"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "clue_related_url",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "clue_related_url"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "clue_content",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "clue_content"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "clue_title",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "clue_title"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "clue_alias",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "clue_alias"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "clue_label",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "clue_label"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "clue_second_class",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "clue_second_class"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "clue_first_class",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "clue_first_class"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "clue_url",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "clue_url"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "adivser_key",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "adivser_key"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "evaluations_channel_id",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "evaluation_channel_id"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "appointment_phone",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "appointment_phone"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "appointment_name",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "appointment_name"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "member_id",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "member_id"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "click_time",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "click_time"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "clickname",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "clickname"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "entretype",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "entretype"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "editname",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "editname"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "editcontent",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "editcontent"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "searchtext",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "searchtext"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "latest_campaign_code",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "latest_campaign_code"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "articleid",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "articleid"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "headimageurl",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "headimageurl"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "is_share",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "is_share"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "share_url",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "share_url"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "share_page_alias",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "share_page_alias"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "share_platform_type",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "share_platform_type"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "share_member_id",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "share_member_id"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "page_type",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "page_type"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "appstore_code",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "appstore_code"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "material_form",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "material_form"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "module_name",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "module_name"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "item_name",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "item_name"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "moudle_acitvity_id",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "module_activity_id"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "module_activity_name",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "module_activity_name"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "module_url",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "module_url"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "module_pic",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "module_pic"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "module_alias",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "module_alias"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "_browser_type",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "_browser_type"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "_browser_family",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "_browser_family"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "_browser_engine",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "_browser_engine"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "_os_type",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "_os_type"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "expand_content",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "expand_content"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "problem_type",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "problem_type"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "material_id",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "material_id"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "customer_type",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "customer_type"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "customer_identity",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "customer_identity"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "data_type",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "data_type"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "employee_information",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "employee_information"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "insurance_type",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "insurance_type"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "premium_trial",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "premium_trial"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "support_concept",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "support_concept"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "cancel_reson",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "cancel_reson"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "charactar_type",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "charactar_type"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "charactar_name",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "charactar_name"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "price",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "price"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "app_crashed_name",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "app_crashed_name"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "request_payload",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "request_payload"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "_latest_p",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "_latest_p"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "_latest_c",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "_latest_c"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "request_interface_name",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "request_interface_name"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "page_name",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "page_name"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "popup_name",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "popup_name"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "is_popup",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "is_popup"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "is_redirect_weixin",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "is_redirect_weixin"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "first_parent_id",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "first_parent_id"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "business_name",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "business_name"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "login_source",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "login_source"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "login_results",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "login_results"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "partner_id",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "partner_id"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "hz_business_line",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "hz_business_line"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "customer_source",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "customer_source"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "conclusions",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "conclusions"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "recommend_products",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "recommend_products"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "disease_name",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "disease_name"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "disease_id",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "disease_id"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "parent_id",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "parent_id"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "business_scene",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "business_scene"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "product_name",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "product_name"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "is_first_order",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "is_first_order"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "fail_reason",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "fail_reason"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "payment_method",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "payment_method"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "encrypted_insure_num",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "encrypted_insure_no"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "content_id",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "content_id"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "have_result",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "have_result"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "content_type",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "content_type"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "video_id",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "video_id"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "filters",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "filters"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "is_invite",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "is_invite"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "authenticator_type",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "authenticator_type"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "process_type",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "process_type"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "try_trail_content",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "try_trail_content"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "try_trail_title",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "try_trail_title"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "premium_payment_agelimit",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "premium_payment_agelimit"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "premium_payment_type",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "premium_payment_type"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "applicant_birthdate",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "applicant_birthdate"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "applicant_gender",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "applicant_gender"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "policy_period",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "policy_period"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "underwriting_area",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "underwriting_area"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "insured_gender",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "insured_gender"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "plan_name",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "plan_name"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "company_name",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "company_name"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "insured_birthdate",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "insured_birthdate"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "platform_product_id",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "platform_prod_id"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "platform_product_type",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "platform_prod_type"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "merchant_name",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "merchant_name"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "experiment_id",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "experiment_id"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "experiment_group_version",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "experiment_group_version"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "experiment_group_name",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "experiment_group_name"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "experiment_group_id",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "experiment_group_id"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "campaign_id",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "campaign_id"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "tags",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "tags"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "company_id",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "company_id"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "invisitor_id",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "invisitor_id"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "segmentation_id",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "segmentation_id"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "author_id",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "author_id"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "play_progress",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "play_progress"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "search_content_type",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "search_content_type"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "customer_uuid",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "customer_uuid"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "consultation_feedback",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "consultation_feedback"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "consultation_type",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "consultation_type"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "conversation_id",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "conversation_id"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "problem_name",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "problem_name"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "problem_id",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "problem_id"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "experiment_info",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "experiment_info"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "consult_name",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "consult_name"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "consult_rank",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "consult_rank"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "customer_name",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "customer_name"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "stand",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "stand"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "block",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "block"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "clue_type",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "clue_type"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "share_adivser_id",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "share_adivser_id"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "send_type",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "send_type"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "match_content",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "match_content"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "label_id",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "label_id"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "content_status",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "content_status"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "customer_id_list",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "customer_id_list"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "product_id_list",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "product_id_list"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "rec_push_id",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "rec_push_id"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "recommend_id",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "recommend_id"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "second_category_name",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "second_category_name"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "first_category_name",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "first_category_name"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "wish_type",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "wish_type"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "wish_in_home",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "wish_in_home"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "card_type",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "card_type"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "view_report_id",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "view_report_id"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "experiment_mark",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "experiment_mark"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "entrance_type",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "entrance_type"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "communicate_status",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "communicate_status"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "operating_time",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "operating_time"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "product_id",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "product_id"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "plan_id",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "plan_id"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "merchant_id",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "merchant_id"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "insure_num",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "insure_num"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "staytime",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "staytime"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "proposalid",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "proposalid"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "keyguaranteetime",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "keyguaranteetime"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "productdecodetime",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "productdecodetime"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "trialtime",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "trialtime"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "editproducttime",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "editproducttime"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "cashvaluetime",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "cashvaluetime"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "diseasetime",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "diseasetime"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "othercompanytime",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "othercompanytime"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "hz_customer_id",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "hz_customer_id"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "make_type",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "make_type"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "customer_id",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "customer_id"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "tenant_code",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "tenant_code"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "bi_relate_id",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "bi_relate_id"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "evaluation_cheme_id",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "evaluation_scheme_id"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "insured_id",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "insured_id"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "planid",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "planid"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "material_type",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "material_type"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "first_category_id",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "first_category_id"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "second_category_id",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "second_category_id"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "component_id",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "component_id"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "planet_prod_id",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "planet_prod_id"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "activity_id",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "activity_id"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "solution_type",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "solution_type"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "time_differ_day",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "time_differ_day"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "payment_amount",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "payment_amount"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "basic_amount_insured",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "basic_amount_insured"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "list_number",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "list_number"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "premium_amount",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "premium_amount"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "list_sum",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "list_sum"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "page_index",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "page_index"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "category_count",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "category_count"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "customer_sum",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "customer_sum"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "card_count",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "card_count"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "wish_count",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "wish_count"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "task_id",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "task_id"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "task_expire_time",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "task_expire_time"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "task_status",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "task_status"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "_search_keyword",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "_search_keyword"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "_viewport_position_percent",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "_viewport_position_percent"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "_receive_second",
+            "ruleInfo": {
+                "handler": {
+                    "type": "truncate_time",
+                    "params": [
+                        "receive_time",
+                        "second"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "_unique_id_hash_code",
+            "ruleInfo": {
+                "handler": {
+                    "type": "murmur",
+                    "params": [
+                        "distinct_id"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "id_hash_code",
+            "ruleInfo": {
+                "handler": {
+                    "type": "murmur",
+                    "params": [
+                        "id"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "_event_hash_code",
+            "ruleInfo": {
+                "handler": {
+                    "type": "murmur",
+                    "params": [
+                        "event"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "_receive_year",
+            "ruleInfo": {
+                "handler": {
+                    "type": "truncate_time",
+                    "params": [
+                        "receive_time",
+                        "year"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "_receive_month",
+            "ruleInfo": {
+                "handler": {
+                    "type": "truncate_time",
+                    "params": [
+                        "receive_time",
+                        "month"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "_receive_daily",
+            "ruleInfo": {
+                "handler": {
+                    "type": "truncate_time",
+                    "params": [
+                        "receive_time",
+                        "day"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "_receive_hour",
+            "ruleInfo": {
+                "handler": {
+                    "type": "truncate_time",
+                    "params": [
+                        "receive_time",
+                        "hour"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "_receive_minute",
+            "ruleInfo": {
+                "handler": {
+                    "type": "truncate_time",
+                    "params": [
+                        "receive_time",
+                        "minute"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "_receive_timestamp",
+            "ruleInfo": {
+                "handler": {
+                    "type": "truncate_time",
+                    "params": [
+                        "receive_time",
+                        "mills"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "_first_utm_source",
+            "ruleInfo": {
+                "handler": {
+                    "type": "firstFieldRule",
+                    "params": [
+                        "type",
+                        "profile_set_once",
+                        "_latest_utm_source"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "_first_utm_medium",
+            "ruleInfo": {
+                "handler": {
+                    "type": "firstFieldRule",
+                    "params": [
+                        "type",
+                        "profile_set_once",
+                        "_latest_utm_medium"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "_first_utm_term",
+            "ruleInfo": {
+                "handler": {
+                    "type": "firstFieldRule",
+                    "params": [
+                        "type",
+                        "profile_set_once",
+                        "_latest_utm_term"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "_first_utm_content",
+            "ruleInfo": {
+                "handler": {
+                    "type": "firstFieldRule",
+                    "params": [
+                        "type",
+                        "profile_set_once",
+                        "_latest_utm_content"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "_first_utm_campaign",
+            "ruleInfo": {
+                "handler": {
+                    "type": "firstFieldRule",
+                    "params": [
+                        "type",
+                        "profile_set_once",
+                        "_latest_utm_campaign"
+                    ]
+                }
+            }
+        },
+        {
+            "targetFieldName": "one_id",
+            "ruleInfo": {
+                "handler": {
+                    "type": "eq",
+                    "params": [
+                        "one_id"
+                    ]
+                }
+            }
+        }
+    ],
+    "startTime": "2020-05-06 00:10:00",
+    "endTime": "2020-05-07 00:00:00",
+    "timeChunkNum": 6,
+    "duration": 60,
+    "dtColName": "dt"
+  }
+]
+
